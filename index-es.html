@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANA - Haz que la IA sea útil para tu equipo sin abrumar</title>
+    <meta name="description" content="GANA ayuda a equipos pequeños y organizaciones de impacto a automatizar trabajo repetitivo, mejorar visibilidad y construir sistemas prácticos de IA que ahorran tiempo.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-scroll {
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .rotating-text {
+            display: inline-block;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        .fade-out {
+            animation: fadeOut 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- STICKY NAVBAR -->
+    <nav class="sticky-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-16 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">GANA</span>
+                    </div>
+                    <span class="rotating-text text-xl font-bold text-gray-900" id="rotatingText">Más clientes</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#solutions" class="text-gray-600 hover:text-gray-900 transition-colors">Soluciones</a>
+                    <a href="#use-cases" class="text-gray-600 hover:text-gray-900 transition-colors">Casos de Uso</a>
+                    <a href="#why-gana" class="text-gray-600 hover:text-gray-900 transition-colors">Por qué GANA</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors">🇬🇧 EN</a>
+                    <a href="#cta" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-all">
+                        Agenda Sesión Gratis
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center gap-2">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 text-sm">🇬🇧</a>
+                    <a href="#cta" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all">
+                        Agenda Sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-20 pb-16 px-6 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    Haz que la IA sea útil para tu negocio y equipo
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    GANA ayuda a equipos pequeños y organizaciones de impacto a conseguir más clientes, automatizar trabajo repetitivo y construir sistemas prácticos de IA que te hacen crecer.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                    <a href="#cta" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all">
+                        Agenda una sesión de diagnóstico gratuita
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500">
+                    Gratis • 30 minutos • Sin compromiso
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="py-12 px-6 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-center text-sm text-gray-500 mb-8 uppercase tracking-wide">Confiado por</p>
+            <div class="overflow-hidden">
+                <div class="flex items-center justify-center gap-12 md:gap-16 flex-wrap">
+                    <img src="images/she_loves_data.jpg" alt="She Loves Data" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+                    <img src="images/OrigenesMKT.png" alt="Orígenes Marketing" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+                    <img src="images/muevetex.jpeg" alt="Impact Hub" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+                    <img src="images/Altessia_logo_beige.png" alt="Firgun Ventures" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    La mayoría de los equipos ya tienen oportunidades de usar IA → simplemente no saben por dónde empezar
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Muchas organizaciones todavía pasan horas en tareas que ya podrían simplificarse. Desde preguntas repetitivas de clientes hasta creación manual de contenido y flujos de trabajo internos desordenados, el costo real no es solo tiempo... es impulso perdido.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Demasiado trabajo manual</h3>
+                    <p class="text-gray-600">
+                        Tu equipo pasa horas en tareas repetitivas que podrían automatizarse, dejando menos tiempo para trabajo significativo.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-eye-slash text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Difícil rastrear el progreso</h3>
+                    <p class="text-gray-600">
+                        La información está dispersa en herramientas y hojas de cálculo, dificultando ver qué está pasando realmente.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-question-circle text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">La IA se siente abrumadora</h3>
+                    <p class="text-gray-600">
+                        Sabes que la IA podría ayudar, pero no estás seguro de por dónde empezar o qué es realmente práctico para tu equipo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS SECTION -->
+    <section id="solutions" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    IA práctica que realmente ayuda
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Construimos sistemas que se adaptan a tu flujo de trabajo, no al revés
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- AI Assistants -->
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
+                    <div class="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Asistentes IA</h3>
+                    <p class="text-gray-700 mb-6">
+                        Herramientas de IA personalizadas que manejan preguntas rutinarias, redactan respuestas y ayudan a tu equipo a trabajar más rápido.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-indigo-600 mt-1"></i>
+                            <span>Responder preguntas comunes automáticamente</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-indigo-600 mt-1"></i>
+                            <span>Redactar correos y documentos</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-indigo-600 mt-1"></i>
+                            <span>Soporte en múltiples idiomas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Automation Systems -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-sync-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Sistemas de Automatización</h3>
+                    <p class="text-gray-700 mb-6">
+                        Conecta tus herramientas y automatiza flujos de trabajo para que tu equipo pueda enfocarse en lo que más importa.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Sincronizar datos entre plataformas</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Automatizar tareas repetitivas</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Reducir entrada manual de datos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI Visibility -->
+                <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8">
+                    <div class="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Visibilidad IA</h3>
+                    <p class="text-gray-700 mb-6">
+                        Paneles claros e informes que te ayudan a entender qué está funcionando y qué necesita atención.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Rastrear métricas clave en tiempo real</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Informes automatizados</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-pink-600 mt-1"></i>
+                            <span>Insights basados en datos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visual Examples -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Míralo en acción</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- WhatsApp Example -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-white text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Asistente IA WhatsApp</h4>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 space-y-3">
+                            <div class="flex justify-end">
+                                <div class="bg-gray-200 rounded-lg px-4 py-2 max-w-[80%]">
+                                    <p class="text-sm text-gray-800">¡Hola! Necesito ayuda para automatizar mi servicio al cliente</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-start">
+                                <div class="bg-green-500 text-white rounded-lg px-4 py-2 max-w-[80%]">
+                                    <p class="text-sm">¡Genial! Puedo ayudarte con eso. ¿Qué plataforma estás usando actualmente para servicio al cliente?</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-end">
+                                <div class="bg-gray-200 rounded-lg px-4 py-2 max-w-[80%]">
+                                    <p class="text-sm text-gray-800">Instagram y WhatsApp principalmente</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-start">
+                                <div class="bg-green-500 text-white rounded-lg px-4 py-2 max-w-[80%]">
+                                    <p class="text-sm">¡Perfecto! Podemos configurar asistentes IA para ambos. ¿Te gustaría agendar una sesión de diagnóstico gratuita para discutir tus necesidades específicas?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4 text-center">Respuestas instantáneas, 24/7</p>
+                    </div>
+
+                    <!-- ChatGPT Recommendation Example -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-search text-white text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Visibilidad en Búsqueda IA</h4>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 space-y-4">
+                            <div class="border-b border-gray-200 pb-3">
+                                <p class="text-sm text-gray-600 mb-2">Usuario pregunta a ChatGPT:</p>
+                                <p class="text-sm font-semibold text-gray-900">"¿Quién puede ayudar a mi pequeño equipo con automatización IA y crecimiento empresarial?"</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-2">ChatGPT recomienda:</p>
+                                <div class="bg-white rounded-lg p-4 border-2 border-indigo-200">
+                                    <p class="text-sm text-gray-900 mb-2"><span class="font-bold text-indigo-600">GANA</span> es una gran opción para equipos pequeños y organizaciones de impacto.</p>
+                                    <p class="text-xs text-gray-600">Se especializan en sistemas prácticos de IA, automatización y ayudar a los equipos a trabajar de manera más inteligente sin abrumarlos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4 text-center">Ser descubierto por asistentes IA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE HELP SECTION -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    A quién ayudamos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Trabajamos con equipos que quieren hacer más con menos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chalkboard-teacher text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Coaches</h3>
+                    <p class="text-gray-600 text-sm">
+                        Coaches de negocios, vida y bienestar que buscan automatizar la gestión de clientes
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Estudios</h3>
+                    <p class="text-gray-600 text-sm">
+                        Estudios creativos y equipos de producción optimizando flujos de trabajo
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-briefcase text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Agencias</h3>
+                    <p class="text-gray-600 text-sm">
+                        Proveedores de servicios gestionando múltiples clientes
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Impacto Social</h3>
+                    <p class="text-gray-600 text-sm">
+                        Organizaciones maximizando impacto con recursos limitados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE CASES SECTION -->
+    <section id="use-cases" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Resultados reales de equipos reales
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Mira cómo organizaciones como la tuya están usando IA para trabajar de manera más inteligente
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Use Case 1 -->
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10">
+                    <div class="flex items-start gap-4 mb-4">
+                        <img src="images/she_loves_data.jpg" alt="She Loves Data" class="h-12 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">She Loves Data</h3>
+                            <p class="text-gray-600">ONG en Singapur con presencia en más de 14 países</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Desafío</h4>
+                            <p class="text-gray-700">El equipo de RRHH tenía que procesar manualmente cientos de solicitudes de voluntarios de todo el mundo. Actualizaciones manuales en Google Sheets, envío de DocuSign después de entrevistas, actualización de hojas nuevamente, envío de mensajes de bienvenida y otorgamiento de acceso a carpetas de Drive y Slack. Alto riesgo de perder pasos o solicitudes en correos archivados.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Solución</h4>
+                            <p class="text-gray-700">Flujo de trabajo automatizado conectando formularios de solicitud, Google Sheets, DocuSign y sistemas de comunicación. Datos limpios, estructurados y actualizados automáticamente sin intervención manual necesaria.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Resultado</h4>
+                            <p class="text-gray-700">Equipos mejor organizados sin estrés. 60% de mejora en la experiencia y percepción de los voluntarios ya que las solicitudes ya no se pierden en correos archivados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 md:p-10">
+                    <div class="flex items-start gap-4 mb-4">
+                        <img src="FrigunVentures.png" alt="Firgun Ventures" class="h-12 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Firgun Ventures</h3>
+                            <p class="text-gray-600">Capital de Riesgo</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Desafío</h4>
+                            <p class="text-gray-700">Pequeño equipo de comunicación con una lista interminable de tareas. Las grabaciones de podcasts estaban siendo subutilizadas — un esfuerzo, un canal.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Solución</h4>
+                            <p class="text-gray-700">Sistema automatizado de generación de contenido que transforma grabaciones de podcasts en publicaciones de blog y contenido de newsletter.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Resultado</h4>
+                            <p class="text-gray-700">Un esfuerzo optimizado para más de 3 canales. El equipo de comunicación ahora puede mantener presencia consistente en múltiples plataformas sin carga de trabajo adicional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8 md:p-10">
+                    <div class="flex items-start gap-4 mb-4">
+                        <img src="images/matchacockies.jpeg" alt="Cedric Matcha Cookies" class="h-12 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Cedric Matcha Cookies</h3>
+                            <p class="text-gray-600">Negocio artesanal de galletas</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Desafío</h4>
+                            <p class="text-gray-700">Ser descubierto en la era de la búsqueda IA. Según Harvard Business Review, cuando aparecen resúmenes de IA en resultados de búsqueda, los usuarios solo hacen clic en sitios web el 8% del tiempo (vs 15% sin IA) — una reducción del 47% en clics.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Solución</h4>
+                            <p class="text-gray-700">Reestructuración del sitio web para que los LLMs (ChatGPT, Gemini, etc.) pudieran descubrir y recomendar la marca. Implementación temprana de optimización SEO IA cuando apenas se estaba volviendo popular.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Resultado</h4>
+                            <p class="text-gray-700">ChatGPT comenzó a recomendar la marca. El caso de estudio de LinkedIn se volvió viral, demostrando el poder de la optimización de visibilidad IA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 4 -->
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 md:p-10">
+                    <div class="flex items-start gap-4 mb-4">
+                        <img src="images/OrigenesMKT.png" alt="Orígenes Marketing" class="h-12 object-contain">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Orígenes Marketing</h3>
+                            <p class="text-gray-600">Agencia de marketing digital</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Desafío</h4>
+                            <p class="text-gray-700">Tiempos de respuesta lentos en servicio al cliente a través de plataformas de redes sociales, afectando la satisfacción del cliente y la conversión de leads.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Solución</h4>
+                            <p class="text-gray-700">Implementación de un asistente virtual en canales de redes sociales, entrenado con el tono y voz de su marca para mantener consistencia.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Resultado</h4>
+                            <p class="text-gray-700">Reducción dramática del tiempo de respuesta en servicio al cliente mientras se mantiene la voz de marca y calidad de las interacciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY GANA SECTION -->
+    <section id="why-gana" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Por qué trabajar con GANA
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    No somos solo consultores → somos socios para hacer que la IA funcione para ti
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Hablamos tu idioma</h3>
+                    <p class="text-gray-600">
+                        Sin jerga, sin palabras de moda. Explicamos la IA en términos simples y nos enfocamos en lo que realmente ayuda a tu equipo.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Práctico, no teórico</h3>
+                    <p class="text-gray-600">
+                        Construimos sistemas que realmente usarás, no demos impresionantes que quedan en un estante.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-pink-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Alineados con la misión</h3>
+                    <p class="text-gray-600">
+                        Nos importa el impacto, no solo los ingresos. Por eso ofrecemos apoyo especial para organizaciones sociales.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Enseñamos mientras construimos</h3>
+                    <p class="text-gray-600">
+                        Tu equipo aprende cómo usar y mantener los sistemas que creamos, para que nunca dependas de nosotros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GANA 4 IMPACT SECTION -->
+    <section class="py-20 px-6 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-heart text-white text-2xl"></i>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                GANA 4 Impact
+            </h2>
+            <p class="text-xl mb-8 opacity-90 leading-relaxed">
+                Creemos que la tecnología debe servir a quienes crean cambio positivo. Por eso ofrecemos apoyo dedicado y precios especiales para organizaciones de impacto social, sin fines de lucro e iniciativas comunitarias.
+            </p>
+            <a href="#GANA4IMPACT" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all">
+                Conoce GANA 4 Impact
+            </a>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Nuestro equipo detrás de GANA
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Un equipo con profunda experiencia en tecnología, impacto y educación
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Leader 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <img src="images/MarianaB.jpeg" alt="Mariana Barreto" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Mariana Barreto</h3>
+                    <p class="text-indigo-600 text-center mb-4 font-semibold">Especialista en Crecimiento y Marketing</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Especialista en Crecimiento y Marketing con amplia experiencia en el Sector EduTech y apoyando organizaciones de impacto social y ecosistemas de innovación.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mt-4">
+                        Instructora de Análisis de Datos y Automatizaciones. Y embajadora de Mujeres en Tecnología y Datos para WiDs (Por Stanford University) y She Loves Data.
+                    </p>
+                </div>
+
+                <!-- Leader 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <img src="images/AnaPau.jpeg" alt="Ana Paula" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Ana Paula</h3>
+                    <p class="text-purple-600 text-center mb-4 font-semibold">Analista de Impacto</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Analista de impacto con experiencia en investigación y medición de impacto en organizaciones como World Vision México, Addenbrooke's Charitable Trust y la Universidad de York.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mt-4">
+                        Especializada en análisis de datos, desarrollo de indicadores y evaluación de programas para fortalecer la toma de decisiones y maximizar el impacto de organizaciones sociales.
+                    </p>
+                </div>
+
+                <!-- Leader 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <img src="images/Cedric.jpeg" alt="Cedric de Schaut" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Cedric de Schaut</h3>
+                    <p class="text-pink-600 text-center mb-4 font-semibold">Jefe de Datos e IA</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Encargado de Datos e IA en Firgun Ventures Capital. Instructor líder de IA, autor de best-sellers y creador de contenido de IA Generativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Preguntas frecuentes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Todo lo que necesitas saber sobre trabajar con GANA
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Qué es exactamente una sesión de diagnóstico?</h3>
+                    <p class="text-gray-600">
+                        Es una conversación de 30 minutos donde aprendemos sobre tu equipo, tus desafíos y tus objetivos. Identificaremos 2-3 áreas específicas donde la IA o la automatización podrían ayudar, y te daremos recomendaciones accionables — trabajes con nosotros o no.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Necesitamos experiencia técnica para trabajar con ustedes?</h3>
+                    <p class="text-gray-600">
+                        Para nada. Trabajamos con equipos de todos los niveles técnicos. Explicamos todo en lenguaje simple y entrenamos a tu equipo para usar los sistemas que construimos.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Cuánto tiempo toma la implementación?</h3>
+                    <p class="text-gray-600">
+                        Depende del alcance, pero la mayoría de los proyectos toman de 2 a 6 semanas de principio a fin. Trabajamos en fases para que veas valor rápidamente, no meses después.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Qué pasa si no estamos seguros de que la IA sea adecuada para nosotros?</h3>
+                    <p class="text-gray-600">
+                        Exactamente para eso es la sesión de diagnóstico. Seremos honestos sobre si la IA tiene sentido para tu situación. A veces la respuesta es "todavía no" — y está bien.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Ofrecen soporte continuo?</h3>
+                    <p class="text-gray-600">
+                        Sí. Ofrecemos paquetes de mantenimiento y podemos proporcionar soporte continuo a medida que evolucionan tus necesidades. Pero también diseñamos sistemas que tu equipo puede gestionar de forma independiente.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">¿Qué hace a GANA diferente de otros consultores de IA?</h3>
+                    <p class="text-gray-600">
+                        Nos enfocamos en implementación práctica, no en demos impresionantes. Nos importa el impacto, no solo la tecnología. Y estamos comprometidos a hacer la IA accesible para organizaciones de todos los tamaños, especialmente aquellas que trabajan en bien social.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="cta" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                ¿Listo(a) para hacer que la IA funcione para tu equipo y negocio?
+            </h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Agenda una sesión de diagnóstico gratuita. Identificaremos formas específicas en que la IA puede ayudar a tu equipo a trabajar de manera más inteligente, y recomendaciones de crecimiento para tu negocio.
+            </p>
+
+            <a href="https://calendly.com/gana-diagnostic" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-xl font-semibold text-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                Agenda una sesión de diagnóstico gratuita
+            </a>
+
+            <p class="mt-6 text-gray-500">
+                Gratis • 30 minutos • Sin compromiso
+            </p>
+
+            <div class="mt-12 pt-12 border-t border-gray-200">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-gray-600">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600"></i>
+                        </div>
+                        <span>Sin presión de ventas</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-blue-600"></i>
+                        </div>
+                        <span>Insights accionables</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-heart text-purple-600"></i>
+                        </div>
+                        <span>Enfoque humano primero</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-16 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">GANA</span>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Haciendo la IA útil para equipos pequeños y organizaciones de impacto — sin abrumar.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Soluciones</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Asistentes IA</a></li>
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Sistemas de Automatización</a></li>
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Visibilidad IA</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Compañía</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#why-gana" class="hover:text-white transition-colors">Por qué GANA</a></li>
+                        <li><a href="#use-cases" class="hover:text-white transition-colors">Casos de Uso</a></li>
+                        <li><a href="#GANA4IMPACT" class="hover:text-white transition-colors">GANA 4 Impact</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                <p>© 2026 GANA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Rotating text animation
+        const phrases = [
+            'Más clientes',
+            'Productividad en tu equipo',
+            'Clientes felices',
+            'Tiempo'
+        ];
+
+        let currentIndex = 0;
+        const rotatingTextElement = document.getElementById('rotatingText');
+
+        function rotateText() {
+            // Add fade-out class
+            rotatingTextElement.classList.add('fade-out');
+
+            // Wait for fade-out animation to complete
+            setTimeout(() => {
+                // Update text
+                currentIndex = (currentIndex + 1) % phrases.length;
+                rotatingTextElement.textContent = phrases[currentIndex];
+
+                // Remove fade-out and add fade-in
+                rotatingTextElement.classList.remove('fade-out');
+                rotatingTextElement.classList.add('fade-in');
+
+                // Remove fade-in class after animation
+                setTimeout(() => {
+                    rotatingTextElement.classList.remove('fade-in');
+                }, 300);
+            }, 300);
+        }
+
+        // Start rotation every 3 seconds
+        setInterval(rotateText, 3000);
+    </script>
+
+</body>
+</html>
