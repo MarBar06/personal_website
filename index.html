@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GANA.AI LABS - Make AI Useful for Your Business, Clients and Team</title>
-    <meta name="description" content="GANA.AI LABS helps small teams and impact-driven organizations automate repetitive work, improve visibility, and build practical AI systems that save time.">
+    <meta name="description" content="Mariana Barreto - AI & Automation Growth Specialist. Expert in lead generation, data-driven strategy, and workflow automation for businesses ready to scale.">
+    <title>Mariana Barreto | AI & Automation Growth Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
@@ -14,13 +15,24 @@
             font-family: 'Inter', sans-serif;
         }
 
-        .sticky-nav {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        .gradient-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
         .fade-in-up {
@@ -30,7 +42,7 @@
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -38,106 +50,44 @@
             }
         }
 
-        .logo-scroll {
-            animation: scroll 30s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+        .stat-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
     </style>
 
-    <!-- Schema Markup for SEO -->
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "GANA.AI LABS",
-        "description": "AI systems and automation for small teams and impact organizations",
-        "url": "https://www.gana.ai",
-        "logo": "https://www.gana.ai/logo.png",
+        "@type": "Person",
+        "name": "Mariana Barreto",
+        "jobTitle": "AI & Automation Growth Specialist",
+        "description": "AI & Automation Growth Specialist specializing in lead generation, data-driven strategy, and workflow automation",
+        "url": "https://marianabarreto.com",
         "sameAs": [
-            "https://www.linkedin.com/company/gana",
-            "https://www.instagram.com/gana"
+            "https://www.linkedin.com/in/marianabarretop/",
+            "mailto:marianabarretop7@gmail.com"
         ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Sales",
-            "availableLanguage": ["English", "Spanish"]
-        }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "AI Automation and Consulting",
-        "provider": {
-            "@type": "Organization",
-            "name": "GANA.AI LABS"
-        },
-        "areaServed": "Worldwide",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "AI Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "AI Assistants"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Automation Systems"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "AI Visibility"
-                    }
-                }
-            ]
-        }
+        "knowsAbout": ["AI Automation", "Lead Generation", "Data Analytics", "Growth Marketing", "Workflow Automation"]
     }
     </script>
 </head>
 <body class="bg-white text-gray-900">
 
-    <!-- STICKY NAVBAR -->
-    <nav class="sticky-nav">
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <div class="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center px-3 py-2">
-                        <span class="text-white font-bold text-sm whitespace-nowrap">GANA.AI LABS</span>
-                    </div>
+                <div class="text-xl font-bold text-gray-900">
+                    Mariana Barreto
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#solutions" class="text-gray-600 hover:text-gray-900 transition-colors">Solutions</a>
-                    <a href="#use-cases" class="text-gray-600 hover:text-gray-900 transition-colors">Use Cases</a>
-                    <a href="#why-gana" class="text-gray-600 hover:text-gray-900 transition-colors">Why GANA.AI LABS</a>
-                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
-                    <a href="index-es.html" class="text-gray-600 hover:text-gray-900 transition-colors">🇪🇸 ES</a>
-                    <a href="https://calendly.com/marianabarretop/30min" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-all">
-                        Book Free Session
-                    </a>
-                </div>
-                <div class="md:hidden flex items-center gap-2">
-                    <a href="index-es.html" class="text-gray-600 hover:text-gray-900 text-sm">🇪🇸</a>
-                    <a href="https://calendly.com/marianabarretop/30min" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all">
-                        Book Session
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                    <a href="#expertise" class="text-gray-600 hover:text-gray-900 transition-colors">Expertise</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-gray-900 transition-colors">Portfolio</a>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all">
+                        Let's Connect
                     </a>
                 </div>
             </div>
@@ -145,568 +95,351 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="pt-20 pb-16 px-6 bg-gradient-to-br from-gray-50 to-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center max-w-4xl mx-auto mb-12">
-                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                    Make AI useful for your business and team
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                    GANA.AI LABS helps small teams and impact-driven organizations get more clients, automate repetitive work, and build practical AI systems that make you Growth.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                    <a href="https://calendly.com/marianabarretop/30min" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all">
-                        Book a free diagnostic session
-                    </a>
-                </div>
-                <p class="text-sm text-gray-500">
-                    Free • 30 minutes • No commitment
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRUST BAR -->
-    <section class="py-12 px-6 bg-white border-y border-gray-100">
+    <section class="gradient-hero pt-32 pb-20 px-6 min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto">
-            <p class="text-center text-sm text-gray-500 mb-8 uppercase tracking-wide">Trusted by</p>
-            <div class="overflow-hidden">
-                <div class="flex items-center justify-center gap-8 md:gap-12 flex-wrap">
-                    <img src="images/she_loves_data.jpg" alt="She Loves Data" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
-                    <img src="images/OrigenesMKT.png" alt="Orígenes Marketing" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
-                    <img src="images/muevetex.jpeg" alt="Impact Hub" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
-                    <img src="images/FirgunVentures.png" alt="Firgun Ventures" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
-                    <img src="images/Altessia_logo_beige.png" alt="Altessia" class="h-12 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in-up">
+                    <div class="inline-block mb-4 px-4 py-2 bg-blue-500/20 rounded-full border border-blue-400/30">
+                        <span class="text-blue-300 text-sm font-medium">AI & Automation Growth Specialist</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Transform Your Business with
+                        <span class="text-gradient block mt-2">AI-Powered Growth</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        I help businesses scale through intelligent automation, data-driven lead generation, and strategic AI implementation.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#portfolio" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all border border-white/20 text-center">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="stat-card p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                        <div class="text-gray-300">Lead Management Systems</div>
+                    </div>
+                    <div class="stat-card p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl font-bold text-white mb-2">60%</div>
+                        <div class="text-gray-300">Efficiency Improvement</div>
+                    </div>
+                    <div class="stat-card p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl font-bold text-white mb-2">200+</div>
+                        <div class="text-gray-300">Professionals Trained</div>
+                    </div>
+                    <div class="stat-card p-6 rounded-2xl backdrop-blur-sm">
+                        <div class="text-4xl font-bold text-white mb-2">3+</div>
+                        <div class="text-gray-300">Years Experience</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROBLEM SECTION -->
-    <section class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Most teams already have opportunities to use AI → they just don’t know where to start
-                </h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        I'm an <strong>AI & Automation Growth Specialist</strong> with a proven track record in transforming business operations through intelligent automation and data-driven strategies.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        With a background in <strong>Marketing Management</strong> and advanced certifications in <strong>Data Analytics</strong> and <strong>AI implementation</strong>, I bridge the gap between business strategy and technical execution.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        As a <strong>Women in Tech Ambassador</strong> for Stanford University's WiDS and She Loves Data, I'm passionate about empowering organizations and individuals to harness the power of AI and automation for sustainable growth.
+                    </p>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Core Competencies</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">AI-Powered Lead Generation</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">Workflow Automation (n8n, Zapier, Make)</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">Data Analytics & Visualization</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">CRM Integration & Optimization</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">AI SEO & LLM Optimization</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                            <span class="text-gray-700">Growth Marketing Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE PILLARS -->
+    <section id="expertise" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Expertise Pillars</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Many organizations are still spending hours on tasks that could already be simplified.</p>
-                <p>From repetitive customer questions to manual content creation and messy internal workflows, the real cost is not just time...it’s lost momentum.
+                    Strategic capabilities that drive measurable business results
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-clock text-indigo-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Too much manual work</h3>
-                    <p class="text-gray-600">
-                        Your team spends hours on repetitive tasks that could be automated, leaving less time for meaningful work.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-eye-slash text-indigo-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Hard to track progress</h3>
-                    <p class="text-gray-600">
-                        Information is scattered across tools and spreadsheets, making it difficult to see what's actually happening.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-question-circle text-indigo-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI feels overwhelming</h3>
-                    <p class="text-gray-600">
-                        You know AI could help, but you're not sure where to start or what's actually practical for your team.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOLUTIONS SECTION -->
-    <section id="solutions" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Practical AI that actually helps
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We build systems that fit your workflow, not the other way around
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- AI Assistants -->
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
-                    <div class="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                <!-- Pillar 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
                         <i class="fas fa-robot text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Assistants</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Automation</h3>
                     <p class="text-gray-700 mb-6">
-                        Custom AI tools that handle routine questions, draft responses, and help your team work faster.
+                        Design and implement intelligent automation systems that eliminate manual work and scale your operations 24/7.
                     </p>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-indigo-600 mt-1"></i>
-                            <span>Answer common questions automatically</span>
+                            <i class="fas fa-arrow-right text-blue-600 mt-1 text-sm"></i>
+                            <span>24/7 Lead Management Architecture</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-indigo-600 mt-1"></i>
-                            <span>Draft emails and documents</span>
+                            <i class="fas fa-arrow-right text-blue-600 mt-1 text-sm"></i>
+                            <span>AI-Driven Qualification & Segmentation</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-indigo-600 mt-1"></i>
-                            <span>Support multiple languages</span>
+                            <i class="fas fa-arrow-right text-blue-600 mt-1 text-sm"></i>
+                            <span>Workflow Automation (n8n, Zapier, Make)</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Automation Systems -->
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
-                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-sync-alt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Automation Systems</h3>
-                    <p class="text-gray-700 mb-6">
-                        Connect your tools and automate workflows so your team can focus on what matters most.
-                    </p>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Sync data between platforms</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Automate repetitive tasks</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-purple-600 mt-1"></i>
-                            <span>Reduce manual data entry</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- AI Visibility -->
-                <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8">
-                    <div class="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6">
+                <!-- Pillar 2 -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
                         <i class="fas fa-chart-line text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Visibility</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Lead Generation & Data Strategy</h3>
                     <p class="text-gray-700 mb-6">
-                        Clear dashboards and reports that help you understand what's working and what needs attention.
+                        Build data-driven systems that attract, qualify, and convert high-quality leads into customers.
                     </p>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>Track key metrics in real-time</span>
+                            <i class="fas fa-arrow-right text-purple-600 mt-1 text-sm"></i>
+                            <span>Real-Time Lead Qualification</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>Automated reporting</span>
+                            <i class="fas fa-arrow-right text-purple-600 mt-1 text-sm"></i>
+                            <span>CRM Integration & Optimization</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-pink-600 mt-1"></i>
-                            <span>Data-driven insights</span>
+                            <i class="fas fa-arrow-right text-purple-600 mt-1 text-sm"></i>
+                            <span>Analytics Dashboards & KPI Tracking</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Women in Tech Leadership</h3>
+                    <p class="text-gray-700 mb-6">
+                        Empowering the next generation of women in technology through education, mentorship, and community building.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-green-600 mt-1 text-sm"></i>
+                            <span>Stanford WiDS Ambassador</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-green-600 mt-1 text-sm"></i>
+                            <span>She Loves Data Contributor</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-green-600 mt-1 text-sm"></i>
+                            <span>Le Wagon Tech Instructor</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Visual Examples -->
-            <div class="mt-16">
-                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">See it in action</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- WhatsApp Example -->
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <i class="fab fa-whatsapp text-white text-2xl"></i>
-                            </div>
-                            <h4 class="text-xl font-bold text-gray-900">WhatsApp AI Assistant</h4>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-4 space-y-3">
-                            <div class="flex justify-end">
-                                <div class="bg-gray-200 rounded-lg px-4 py-2 max-w-[80%]">
-                                    <p class="text-sm text-gray-800">Hi! I need help automating my customer service</p>
-                                </div>
-                            </div>
-                            <div class="flex justify-start">
-                                <div class="bg-green-500 text-white rounded-lg px-4 py-2 max-w-[80%]">
-                                    <p class="text-sm">Great! I can help with that. What platform are you currently using for customer service?</p>
-                                </div>
-                            </div>
-                            <div class="flex justify-end">
-                                <div class="bg-gray-200 rounded-lg px-4 py-2 max-w-[80%]">
-                                    <p class="text-sm text-gray-800">Instagram and WhatsApp mainly</p>
-                                </div>
-                            </div>
-                            <div class="flex justify-start">
-                                <div class="bg-green-500 text-white rounded-lg px-4 py-2 max-w-[80%]">
-                                    <p class="text-sm">Perfect! We can set up AI assistants for both. Would you like to book a free diagnostic session to discuss your specific needs?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-500 mt-4 text-center">Instant responses, 24/7</p>
-                    </div>
-
-                    <!-- ChatGPT Recommendation Example -->
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-search text-white text-xl"></i>
-                            </div>
-                            <h4 class="text-xl font-bold text-gray-900">AI Search Visibility</h4>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-4 space-y-4">
-                            <div class="border-b border-gray-200 pb-3">
-                                <p class="text-sm text-gray-600 mb-2">User asks ChatGPT:</p>
-                                <p class="text-sm font-semibold text-gray-900">"Who can help my small team with AI automation and business growth?"</p>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-600 mb-2">ChatGPT recommends:</p>
-                                <div class="bg-white rounded-lg p-4 border-2 border-indigo-200">
-                                    <p class="text-sm text-gray-900 mb-2"><span class="font-bold text-indigo-600">GANA.AI LABS</span> is a great option for small teams and impact-driven organizations.</p>
-                                    <p class="text-xs text-gray-600">They specialize in practical AI systems, automation, and helping teams work smarter without the overwhelm.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-500 mt-4 text-center">Get discovered by AI assistants</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- WHO WE HELP SECTION -->
-    <section class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Who we help
-                </h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We work with teams that want to do more with less
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
-                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-chalkboard-teacher text-indigo-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Coaches</h3>
-                    <p class="text-gray-600 text-sm">
-                        Business, life, and wellness coaches looking to automate client management
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-palette text-purple-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Studios</h3>
-                    <p class="text-gray-600 text-sm">
-                        Creative studios and production teams streamlining workflows
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
-                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-briefcase text-pink-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Agencies</h3>
-                    <p class="text-gray-600 text-sm">
-                        Service providers managing multiple clients
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heart text-green-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Social Impact</h3>
-                    <p class="text-gray-600 text-sm">
-                        Organizations maximizing impact with limited resources
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- USE CASES SECTION -->
-    <section id="use-cases" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Real results from real teams
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    See how organizations like yours are using AI to work smarter
+                    Real-world implementations delivering measurable business impact
                 </p>
             </div>
 
             <div class="space-y-8">
-                <!-- Use Case 1 -->
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10">
-                    <div class="flex items-start gap-4 mb-6">
-                        <img src="images/she_loves_data.jpg" alt="She Loves Data" class="h-12 object-contain">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="grid lg:grid-cols-2 gap-8 p-8">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900">She Loves Data</h3>
-                            <p class="text-gray-600">Global NGO · 14+ countries</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Metric -->
-                    <div class="bg-white rounded-xl p-6 mb-6 border-2 border-indigo-200">
-                        <p class="text-4xl font-bold text-indigo-600 mb-2">60%</p>
-                        <p class="text-gray-700 font-semibold">improvement in volunteer experience</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6 mt-6">
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Problem</h4>
-                            <p class="text-gray-700 mb-3">The HR team manually processed hundreds of volunteer applications each month:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Application forms</li>
-                                <li>Interviews</li>
-                                <li>DocuSign contracts</li>
-                                <li>Onboarding to Drive and Slack</li>
-                            </ul>
-                            <p class="text-gray-700 mt-3">The process required multiple manual updates to Google Sheets, with constant risk of losing applications in archived emails.</p>
-                        </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Implementation</h4>
-                            <p class="text-gray-700 mb-3">Designed an automated volunteer onboarding workflow connecting:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Application forms</li>
-                                <li>Google Sheets</li>
-                                <li>DocuSign</li>
-                                <li>Slack</li>
-                                <li>Google Drive</li>
-                            </ul>
-                            <p class="text-gray-700 mt-3">The entire process was automated with no manual intervention.</p>
-
-                            <!-- Tech Stack -->
-                            <div class="mt-4 pt-4 border-t border-gray-300">
-                                <p class="text-sm text-gray-600 font-semibold mb-2">Stack:</p>
-                                <p class="text-sm text-gray-600">Google Sheets · DocuSign · Slack · Google Drive · Zapier</p>
+                            <div class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4">
+                                AI-Powered Lead Management
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 AI Lead Management System</h3>
+                            <p class="text-gray-700 mb-6">
+                                Engineered a comprehensive lead management architecture using n8n and HubSpot, integrating AI-driven logic to qualify and segment prospects in real time.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Eliminated response latency with 24/7 automation</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Autonomous "Cold" and "Hot" pipeline categorization</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Zero manual errors in lead processing</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Results</h4>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-indigo-600 font-bold">•</span>
-                                    <span><strong>60% improvement</strong> in volunteer experience</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-indigo-600 font-bold">•</span>
-                                    <span><strong>Elimination</strong> of repetitive manual tasks</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-indigo-600 font-bold">•</span>
-                                    <span><strong>Faster onboarding</strong> without errors</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-indigo-600 font-bold">•</span>
-                                    <span><strong>HR team freed up</strong> several hours per week</span>
-                                </li>
-                            </ul>
+                        <div class="flex items-center justify-center">
+                            <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-8 w-full">
+                                <div class="text-center">
+                                    <div class="text-5xl font-bold text-blue-600 mb-2">100%</div>
+                                    <div class="text-gray-700 font-medium">Automation Rate</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Use Case 2 -->
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10">
-                    <div class="flex items-start gap-4 mb-6">
-                        <img src="images/FirgunVentures.png" alt="Firgun Ventures" class="h-12 object-contain">
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="grid lg:grid-cols-2 gap-8 p-8">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900">Firgun Ventures</h3>
-                            <p class="text-gray-600">Venture Capital Fund</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Metric -->
-                    <div class="bg-white rounded-xl p-6 mb-6 border-2 border-purple-200">
-                        <p class="text-4xl font-bold text-purple-600 mb-2">3+ channels</p>
-                        <p class="text-gray-700 font-semibold">from one content effort</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6 mt-6">
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Problem</h4>
-                            <p class="text-gray-700 mb-3">The communication team had limited content flow:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Podcast → single channel only</li>
-                                <li>Low content reuse</li>
-                                <li>Limited resources</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Implementation</h4>
-                            <p class="text-gray-700 mb-3">Created an automated AI content generation pipeline that transforms podcast recordings into:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Blog articles</li>
-                                <li>Newsletter content</li>
-                                <li>LinkedIn posts</li>
-                            </ul>
-
-                            <!-- Tech Stack -->
-                            <div class="mt-4 pt-4 border-t border-gray-300">
-                                <p class="text-sm text-gray-600 font-semibold mb-2">Stack:</p>
-                                <p class="text-sm text-gray-600">OpenAI API · Custom AI Pipeline · CMS Integration</p>
+                            <div class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
+                                AI SEO Strategy
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">LLM Brand Visibility Optimization</h3>
+                            <p class="text-gray-700 mb-6">
+                                Implemented cutting-edge AI SEO strategy for Cedric De Schaut Matcha Cookies, creating a strategic brand presence to influence LLM recommendations and organic visibility.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Optimized for ChatGPT and AI search engines</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Increased brand mentions in LLM responses</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Future-proofed digital presence</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Results</h4>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-purple-600 font-bold">•</span>
-                                    <span><strong>Content distributed</strong> across 3+ channels</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-purple-600 font-bold">•</span>
-                                    <span><strong>Content production</strong> without growing the team</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-purple-600 font-bold">•</span>
-                                    <span><strong>Consistent presence</strong> across multiple platforms</span>
-                                </li>
-                            </ul>
+                        <div class="flex items-center justify-center">
+                            <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-8 w-full">
+                                <div class="text-center">
+                                    <div class="text-5xl font-bold text-purple-600 mb-2">AI-First</div>
+                                    <div class="text-gray-700 font-medium">SEO Strategy</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Use Case 3 -->
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10">
-                    <div class="flex items-start gap-4 mb-6">
-                        <img src="images/matchacockies.jpeg" alt="Cedric Matcha Cookies" class="h-12 object-contain">
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="grid lg:grid-cols-2 gap-8 p-8">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900">Cedric Matcha Cookies</h3>
-                            <p class="text-gray-600">Artisan Cookie Brand</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Metric -->
-                    <div class="bg-white rounded-xl p-6 mb-6 border-2 border-pink-200">
-                        <p class="text-4xl font-bold text-pink-600 mb-2">Viral Case Study</p>
-                        <p class="text-gray-700 font-semibold">ChatGPT now recommends the brand</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6 mt-6">
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Problem</h4>
-                            <p class="text-gray-700 mb-3">With the arrival of AI-generated search results, organic traffic decreased.</p>
-                            <p class="text-gray-700 mb-3">According to Harvard Business Review:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Users click only <strong>8%</strong> of the time when there's an AI summary</li>
-                                <li>Previously it was <strong>15%</strong></li>
-                            </ul>
-                        </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Implementation</h4>
-                            <p class="text-gray-700 mb-3">Restructured the website for AI model optimization (LLM visibility):</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Structured content for LLMs</li>
-                                <li>Clear semantic architecture</li>
-                                <li>Optimization for engines like ChatGPT and Gemini</li>
-                            </ul>
-
-                            <!-- Tech Stack -->
-                            <div class="mt-4 pt-4 border-t border-gray-300">
-                                <p class="text-sm text-gray-600 font-semibold mb-2">Stack:</p>
-                                <p class="text-sm text-gray-600">Semantic HTML · Schema Markup · AI SEO Optimization</p>
+                            <div class="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
+                                Wellness & GTM Strategy
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Altessia - AI-Powered Go-to-Market</h3>
+                            <p class="text-gray-700 mb-6">
+                                Designed and executed a comprehensive Go-to-Market (GTM) strategy for transdermal wellness patches targeting cabin crews, leveraging Claude AI for strategic planning.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">AI-assisted market research and positioning</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Targeted messaging for niche audience</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Full digital presence: <a href="https://altessiapatch.com/" target="_blank" class="text-blue-600 hover:underline">altessiapatch.com</a></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Results</h4>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-pink-600 font-bold">•</span>
-                                    <span><strong>Brand recommended</strong> by ChatGPT</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-pink-600 font-bold">•</span>
-                                    <span><strong>Case study went viral</strong> on LinkedIn</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-pink-600 font-bold">•</span>
-                                    <span><strong>Increased visibility</strong> in AI-assisted searches</span>
-                                </li>
-                            </ul>
+                        <div class="flex items-center justify-center">
+                            <div class="bg-gradient-to-br from-green-100 to-teal-100 rounded-xl p-8 w-full">
+                                <div class="text-center">
+                                    <div class="text-5xl font-bold text-green-600 mb-2">Full</div>
+                                    <div class="text-gray-700 font-medium">GTM Strategy</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Use Case 4 -->
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10">
-                    <div class="flex items-start gap-4 mb-6">
-                        <img src="images/OrigenesMKT.png" alt="Orígenes Marketing" class="h-12 object-contain">
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="grid lg:grid-cols-2 gap-8 p-8">
                         <div>
-                            <h3 class="text-2xl font-bold text-gray-900">Orígenes Marketing</h3>
-                            <p class="text-gray-600">Digital Marketing Agency</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Metric -->
-                    <div class="bg-white rounded-xl p-6 mb-6 border-2 border-orange-200">
-                        <p class="text-4xl font-bold text-orange-600 mb-2">24/7</p>
-                        <p class="text-gray-700 font-semibold">social media support with drastic response time reduction</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6 mt-6">
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Problem</h4>
-                            <p class="text-gray-700 mb-3">Slow response times on social media:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Customer inquiries</li>
-                                <li>Lead generation</li>
-                                <li>Support</li>
-                            </ul>
-                            <p class="text-gray-700 mt-3">This affected satisfaction and conversion.</p>
-                        </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Implementation</h4>
-                            <p class="text-gray-700 mb-3">Developed an AI assistant for social media trained with:</p>
-                            <ul class="text-gray-700 space-y-2 list-disc list-inside">
-                                <li>Brand tone</li>
-                                <li>Frequently asked questions</li>
-                                <li>Service processes</li>
-                            </ul>
-                            <p class="text-gray-700 mt-3">The assistant automatically responds on social channels.</p>
-
-                            <!-- Tech Stack -->
-                            <div class="mt-4 pt-4 border-t border-gray-300">
-                                <p class="text-sm text-gray-600 font-semibold mb-2">Stack:</p>
-                                <p class="text-sm text-gray-600">Custom AI Model · Social Media APIs · CRM Integration</p>
+                            <div class="inline-block px-4 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
+                                Content Automation
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">MultiCultural Couples Content Engine</h3>
+                            <p class="text-gray-700 mb-6">
+                                Built an automated content engine to streamline production across interviews, blogs, and social media channels for a personal project focused on multicultural relationships.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Multi-channel content distribution</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Automated workflow from interview to publication</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Consistent brand voice across platforms</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white bg-opacity-50 rounded-xl p-6">
-                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Results</h4>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-orange-600 font-bold">•</span>
-                                    <span><strong>Drastic reduction</strong> in response time</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-orange-600 font-bold">•</span>
-                                    <span><strong>24/7 support</strong> on social media</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-orange-600 font-bold">•</span>
-                                    <span><strong>Consistency</strong> in brand voice</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-orange-600 font-bold">•</span>
-                                    <span><strong>Better lead conversion</strong></span>
-                                </li>
-                            </ul>
+                        <div class="flex items-center justify-center">
+                            <div class="bg-gradient-to-br from-indigo-100 to-blue-100 rounded-xl p-8 w-full">
+                                <div class="text-center">
+                                    <div class="text-5xl font-bold text-indigo-600 mb-2">3+</div>
+                                    <div class="text-gray-700 font-medium">Content Channels</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -714,275 +447,50 @@
         </div>
     </section>
 
-    <!-- WHY GANA SECTION -->
-    <section id="why-gana" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Why work with GANA.AI LABS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We're not just consultants → we're partners in making AI work for you
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-handshake text-indigo-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">We speak your language</h3>
-                    <p class="text-gray-600">
-                        No jargon, no buzzwords. We explain AI in plain terms and focus on what actually helps your team.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-tools text-purple-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Practical, not theoretical</h3>
-                    <p class="text-gray-600">
-                        We build systems you'll actually use, not impressive demos that sit on a shelf.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-heart text-pink-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Mission-aligned</h3>
-                    <p class="text-gray-600">
-                        We care about impact, not just revenue. That's why we offer special support for social organizations.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">We teach as we build</h3>
-                    <p class="text-gray-600">
-                        Your team learns how to use and maintain the systems we create, so you're never dependent on us.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GANA 4 IMPACT SECTION -->
-    <section class="py-20 px-6 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-heart text-white text-2xl"></i>
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                GANA.AI LABS 4 Impact
-            </h2>
-            <p class="text-xl mb-8 opacity-90 leading-relaxed">
-                We believe technology should serve those creating positive change. That's why we offer dedicated support and special pricing for social impact organizations, nonprofits, and community initiatives.
-            </p>
-            <a href="#GANA4IMPACT" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all">
-                Learn about GANA.AI LABS 4 Impact
-            </a>
-        </div>
-    </section>
-
-    <!-- TEAM SECTION -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Our team behind GANA.AI LABS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A team with deep experience in technology, impact, and education
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Leader 1 -->
-                <div class="bg-gray-50 rounded-2xl p-8">
-                    <img src="images/MarianaB.jpeg" alt="Mariana Barreto" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Mariana Barreto</h3>
-                    <p class="text-indigo-600 text-center mb-4 font-semibold">Growth & Marketing Specialist</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Growth and Marketing Specialist with extensive experience in the EduTech Sector and supporting social impact organizations and innovation ecosystems.                 </p>
-                    <p class="text-gray-600 leading-relaxed mt-4">
-                        Data Analytics and Automations instructor. And women in Tech and Data Ambassador for WiDs (By Stanford University) and She Loves Data.
-                    </p>
-                </div>
-
-                <!-- Leader 2 -->
-                <div class="bg-gray-50 rounded-2xl p-8">
-                    <img src="images/AnaPau.jpeg" alt="Ana Paula" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Ana Paula</h3>
-                    <p class="text-purple-600 text-center mb-4 font-semibold">Impact Analyst</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Impact analyst with experience in research and impact measurement across organizations such as World Vision Mexico, Addenbrooke's Charitable Trust, and the University of York.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed mt-4">
-                        Specialized in data analysis, indicator development, and program evaluation to strengthen decision-making and maximize the impact of social organizations.
-                    </p>
-                </div>
-
-                <!-- Leader 3 -->
-                <div class="bg-gray-50 rounded-2xl p-8">
-                    <img src="images/Cedric.jpeg" alt="Cedric de Schaut" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">Cedric de Schaut</h3>
-                    <p class="text-pink-600 text-center mb-4 font-semibold">Head of Data & AI</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Head of Data and AI at Firgun Ventures Capital. Lead AI instructor, best-selling author, and Generative AI content creator.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section id="faq" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Frequently asked questions
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Everything you need to know about working with GANA.AI LABS
-                </p>
-            </div>
-
-            <div class="space-y-6">
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What exactly is a diagnostic session?</h3>
-                    <p class="text-gray-600">
-                        It's a 30-minute conversation where we learn about your team, your challenges, and your goals. We'll identify 2-3 specific areas where AI or automation could help, and give you actionable recommendations — whether you work with us or not.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Do we need technical expertise to work with you?</h3>
-                    <p class="text-gray-600">
-                        Not at all. We work with teams of all technical levels. We explain everything in plain language and train your team to use the systems we build.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">How long does implementation take?</h3>
-                    <p class="text-gray-600">
-                        It depends on the scope, but most projects take 2-6 weeks from start to finish. We work in phases so you see value quickly, not months later.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What if we're not sure AI is right for us?</h3>
-                    <p class="text-gray-600">
-                        That's exactly what the diagnostic session is for. We'll be honest about whether AI makes sense for your situation. Sometimes the answer is "not yet" — and that's okay.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Do you offer ongoing support?</h3>
-                    <p class="text-gray-600">
-                        Yes. We offer maintenance packages and can provide ongoing support as your needs evolve. But we also design systems that your team can manage independently.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl p-8 shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">What makes GANA.AI LABS different from other AI consultants?</h3>
-                    <p class="text-gray-600">
-                        We focus on practical implementation, not impressive demos. We care about impact, not just technology. And we're committed to making AI accessible to organizations of all sizes, especially those working on social good.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What exactly is a diagnostic session?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "It's a 30-minute conversation where we learn about your team, your challenges, and your goals. We'll identify 2-3 specific areas where AI or automation could help, and give you actionable recommendations — whether you work with us or not."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do we need technical expertise to work with you?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Not at all. We work with teams of all technical levels. We explain everything in plain language and train your team to use the systems we build."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does implementation take?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "It depends on the scope, but most projects take 2-6 weeks from start to finish. We work in phases so you see value quickly, not months later."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Person Schema for Leaders -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mariana Barreto",
-        "jobTitle": "Growth and Marketing Specialist",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "GANA.AI LABS"
-        },
-        "description": "Growth and Marketing Specialist with extensive experience supporting social impact organizations and innovation ecosystems."
-    }
-    </script>
-
-    <!-- FREE DIAGNOSTIC CTA SECTION -->
-    <section id="cta" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Ready to make AI work for your team?
-            </h2>
-            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Book a free diagnostic session. We'll identify specific ways AI can help your team work smarter, and you'll walk away with actionable recommendations.
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Let's Build Something Extraordinary</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                Ready to transform your business with AI-powered automation and data-driven growth strategies? Let's connect.
             </p>
 
-            <a href="https://calendly.com/gana-diagnostic" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-xl font-semibold text-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                Book a free diagnostic session
-            </a>
-
-            <p class="mt-6 text-gray-500">
-                Free • 30 minutes • No commitment
-            </p>
-
-            <div class="mt-12 pt-12 border-t border-gray-200">
-                <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-gray-600">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-check text-green-600"></i>
-                        </div>
-                        <span>No sales pressure</span>
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <a href="mailto:marianabarretop7@gmail.com" class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl transition-all flex items-center gap-4">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-envelope text-white text-xl"></i>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-lightbulb text-blue-600"></i>
-                        </div>
-                        <span>Actionable insights</span>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-900">Email</div>
+                        <div class="text-gray-600 text-sm">marianabarretop7@gmail.com</div>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-heart text-purple-600"></i>
-                        </div>
-                        <span>Human-first approach</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/marianabarretop/" target="_blank" class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl transition-all flex items-center gap-4">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fab fa-linkedin text-white text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-900">LinkedIn</div>
+                        <div class="text-gray-600 text-sm">Connect with me</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">What I Can Help You With</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div>
+                        <div class="font-semibold text-gray-900 mb-2">AI Automation</div>
+                        <p class="text-gray-600 text-sm">Workflow automation, lead management, CRM integration</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-900 mb-2">Growth Strategy</div>
+                        <p class="text-gray-600 text-sm">Data analytics, KPI tracking, performance optimization</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-900 mb-2">Training & Consulting</div>
+                        <p class="text-gray-600 text-sm">Team training, strategic consulting, implementation support</p>
                     </div>
                 </div>
             </div>
@@ -990,59 +498,47 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-16 px-6">
+    <footer class="bg-gray-900 text-white py-12 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-16 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">GANA.AI LABS</span>
-                        </div>
-
-                    </div>
-                    <p class="text-gray-400 mb-6 max-w-md">
-                        Making AI useful for small teams and impact-driven organizations — without the overwhelm.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h4 class="font-semibold mb-4">Solutions</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="#solutions" class="hover:text-white transition-colors">AI Assistants</a></li>
-                        <li><a href="#solutions" class="hover:text-white transition-colors">Automation Systems</a></li>
-                        <li><a href="#solutions" class="hover:text-white transition-colors">AI Visibility</a></li>
+                    <h3 class="text-xl font-bold mb-4">Mariana Barreto</h3>
+                    <p class="text-gray-400">
+                        AI & Automation Growth Specialist helping businesses scale through intelligent systems and data-driven strategies.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#expertise" class="text-gray-400 hover:text-white transition">Expertise</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="#why-gana" class="hover:text-white transition-colors">Why GANA.AI LABS</a></li>
-                        <li><a href="#use-cases" class="hover:text-white transition-colors">Use Cases</a></li>
-                        <li><a href="#GANA4IMPACT" class="hover:text-white transition-colors">GANA.AI LABS 4 Impact</a></li>
-                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="mailto:marianabarretop7@gmail.com" class="text-gray-400 hover:text-white transition flex items-center gap-2">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marianabarretop/" target="_blank" class="text-gray-400 hover:text-white transition flex items-center gap-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-                <p>© 2026 GANA.AI LABS. All rights reserved.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Mariana Barreto. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Smooth Scroll Script -->
+    <!-- Smooth Scroll -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
