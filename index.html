@@ -54,6 +54,17 @@
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
             border: 1px solid rgba(59, 130, 246, 0.2);
         }
+
+        .profile-image {
+            object-position: center;
+        }
+
+        @media (max-width: 1024px) {
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+        }
     </style>
 
     <!-- Schema Markup -->
@@ -103,11 +114,11 @@
                         <span class="text-blue-300 text-sm font-medium">AI & Automation Growth Specialist</span>
                     </div>
                     <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        Transform Your Business with
-                        <span class="text-gradient block mt-2">AI-Powered Growth</span>
+                        I Build AI Systems That
+                        <span class="text-gradient block mt-2">Generate Leads While You Sleep</span>
                     </h1>
                     <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                        I help businesses scale through intelligent automation, data-driven lead generation, and strategic AI implementation.
+                        Helping businesses automate lead generation, streamline operations, and turn AI into measurable growth—without the buzzwords.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#portfolio" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center">
@@ -151,16 +162,21 @@
             </div>
 
             <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
-                <div class="prose prose-lg max-w-none">
-                    <p class="text-gray-700 leading-relaxed mb-6">
-                        I'm an <strong>AI & Automation Growth Specialist</strong> with a proven track record in transforming business operations through intelligent automation and data-driven strategies.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed mb-6">
-                        With a background in <strong>Marketing Management</strong> and advanced certifications in <strong>Data Analytics</strong> and <strong>AI implementation</strong>, I bridge the gap between business strategy and technical execution.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        As a <strong>Women in Tech Ambassador</strong> for Stanford University's WiDS and She Loves Data, I'm passionate about empowering organizations and individuals to harness the power of AI and automation for sustainable growth.
-                    </p>
+                <div class="grid lg:grid-cols-3 gap-8 items-center mb-8">
+                    <div class="lg:col-span-1 flex justify-center">
+                        <img src="images/MarianaB.jpeg" alt="Mariana Barreto" class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-blue-100">
+                    </div>
+                    <div class="lg:col-span-2 prose prose-lg max-w-none">
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            My specialty is designing <strong>AI-powered growth engines</strong> that automate lead generation, qualify prospects in real-time, and integrate seamlessly into your existing operations. In few words: I build systems that work.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            I combine <strong>growth marketing</strong>, <strong>data analytics</strong>, and <strong>automation engineering</strong> to create solutions that actually move the needle. Whether it's a 24/7 lead management system built with n8n and HubSpot, or an AI SEO strategy that gets your brand recommended by ChatGPT, I focus on outcomes, not hype.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Beyond client work, I'm a <strong>Women in Tech Ambassador</strong> for Stanford's WiDS and She Loves Data, and a tech instructor at Le Wagon, training over 200 professionals in AI, automation, and data-driven decision making. I also love traveling and playing Padel.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="mt-8 pt-8 border-t border-gray-200">
@@ -285,13 +301,29 @@
         </div>
     </section>
 
+    <!-- TRUSTED BY SECTION -->
+    <section class="py-16 px-6 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8">Trusted By</h3>
+                <div class="flex flex-wrap justify-center items-center gap-12 opacity-70">
+                    <img src="images/Clients/OrigenesMKT.png" alt="Orígenes Marketing" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                    <img src="images/Clients/Altessia_logo_beige.png" alt="Altessia" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                    <img src="images/Clients/matchacockies.jpeg" alt="Matcha Cookies" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                    <img src="images/Clients/she_loves_data.jpg" alt="She Loves Data" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                    <img src="images/Clients/uber_logo.jpeg" alt="Uber" class="h-12 object-contain grayscale hover:grayscale-0 transition-all">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="py-20 px-6 bg-gray-50">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Case Studies</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Real-world implementations delivering measurable business impact
+                    Real systems, real results...no fluff
                 </p>
             </div>
 
@@ -303,32 +335,34 @@
                             <div class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4">
                                 AI-Powered Lead Management
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 AI Lead Management System</h3>
-                            <p class="text-gray-700 mb-6">
-                                Engineered a comprehensive lead management architecture using n8n and HubSpot, integrating AI-driven logic to qualify and segment prospects in real time.
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 Lead Qualification System for Automotive Marketing</h3>
+                            <p class="text-gray-600 text-sm mb-2"><strong>Client:</strong> Orígenes Marketing (Automotive Center)</p>
+                            <p class="text-gray-700 mb-4">
+                                <strong>The Challenge:</strong> Manual lead processing created delays, inconsistent follow-up, and lost opportunities in a high-volume automotive sales environment.
                             </p>
-                            <div class="space-y-3">
+                            <p class="text-gray-700 mb-4">
+                                <strong>What I Built:</strong> A fully automated lead management system using n8n and HubSpot that captures, qualifies, and routes leads 24/7 with AI-driven logic.
+                            </p>
+                            <div class="space-y-3 mb-6">
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Eliminated response latency with 24/7 automation</span>
+                                    <span class="text-gray-700">Instant lead capture and qualification—no human delay</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Autonomous "Cold" and "Hot" pipeline categorization</span>
+                                    <span class="text-gray-700">Automatic "Hot" vs "Cold" pipeline segmentation</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Zero manual errors in lead processing</span>
+                                    <span class="text-gray-700">Zero manual errors, 100% automation rate</span>
                                 </div>
                             </div>
+                            <p class="text-gray-900 font-semibold">
+                                <i class="fas fa-chart-line text-blue-600 mr-2"></i>Result: Eliminated response latency and freed the sales team to focus on closing, not sorting.
+                            </p>
                         </div>
                         <div class="flex items-center justify-center">
-                            <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-8 w-full">
-                                <div class="text-center">
-                                    <div class="text-5xl font-bold text-blue-600 mb-2">100%</div>
-                                    <div class="text-gray-700 font-medium">Automation Rate</div>
-                                </div>
-                            </div>
+                            <img src="images/VisualProof/N8N_Workflow.png" alt="n8n Workflow Automation" class="rounded-xl shadow-lg w-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -336,36 +370,38 @@
                 <!-- Project 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
                     <div class="grid lg:grid-cols-2 gap-8 p-8">
-                        <div>
-                            <div class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
-                                AI SEO Strategy
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">LLM Brand Visibility Optimization</h3>
-                            <p class="text-gray-700 mb-6">
-                                Implemented cutting-edge AI SEO strategy for Cedric De Schaut Matcha Cookies, creating a strategic brand presence to influence LLM recommendations and organic visibility.
-                            </p>
-                            <div class="space-y-3">
-                                <div class="flex items-start gap-3">
-                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Optimized for ChatGPT and AI search engines</span>
-                                </div>
-                                <div class="flex items-start gap-3">
-                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Increased brand mentions in LLM responses</span>
-                                </div>
-                                <div class="flex items-start gap-3">
-                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Future-proofed digital presence</span>
-                                </div>
-                            </div>
+                        <div class="order-2 lg:order-1 flex items-center justify-center">
+                            <img src="images/VisualProof/matchacookiesproof.jpeg" alt="Matcha Cookies Brand" class="rounded-xl shadow-lg w-full max-w-sm object-cover">
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-8 w-full">
-                                <div class="text-center">
-                                    <div class="text-5xl font-bold text-purple-600 mb-2">AI-First</div>
-                                    <div class="text-gray-700 font-medium">SEO Strategy</div>
+                        <div class="order-1 lg:order-2">
+                            <div class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
+                                AI SEO & LLM Visibility
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Getting a Cookie Brand Recommended by ChatGPT</h3>
+                            <p class="text-gray-600 text-sm mb-2"><strong>Client:</strong> Cedric De Schaut Matcha Cookies</p>
+                            <p class="text-gray-700 mb-4">
+                                <strong>The Challenge:</strong> Traditional SEO wasn't enough. The future of search is AI-driven, and this brand needed to be visible where people actually ask questions—ChatGPT, Perplexity, and other LLMs.
+                            </p>
+                            <p class="text-gray-700 mb-4">
+                                <strong>What I Built:</strong> An AI-first SEO strategy designed to influence how large language models understand and recommend the brand.
+                            </p>
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Optimized content for LLM training data and retrieval</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Structured brand presence across high-authority sources</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Future-proofed digital visibility for AI search era</span>
                                 </div>
                             </div>
+                            <p class="text-gray-900 font-semibold">
+                                <i class="fas fa-chart-line text-purple-600 mr-2"></i>Result: Increased brand mentions in AI-generated recommendations and positioned for the next generation of search.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -375,34 +411,36 @@
                     <div class="grid lg:grid-cols-2 gap-8 p-8">
                         <div>
                             <div class="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
-                                Wellness & GTM Strategy
+                                Go-to-Market Strategy
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Altessia - AI-Powered Go-to-Market</h3>
-                            <p class="text-gray-700 mb-6">
-                                Designed and executed a comprehensive Go-to-Market (GTM) strategy for transdermal wellness patches targeting cabin crews, leveraging Claude AI for strategic planning.
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Zero to Launch: Wellness Patches for Cabin Crews</h3>
+                            <p class="text-gray-600 text-sm mb-2"><strong>Client:</strong> Altessia Wellness Patches</p>
+                            <p class="text-gray-700 mb-4">
+                                <strong>The Challenge:</strong> Launch a new wellness product in a niche market (airline cabin crews) with no existing brand presence or distribution.
                             </p>
-                            <div class="space-y-3">
+                            <p class="text-gray-700 mb-4">
+                                <strong>What I Built:</strong> A complete go-to-market strategy from positioning to launch, using AI-assisted research and strategic planning to identify the right audience and messaging.
+                            </p>
+                            <div class="space-y-3 mb-6">
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">AI-assisted market research and positioning</span>
+                                    <span class="text-gray-700">AI-powered market research and competitive analysis</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Targeted messaging for niche audience</span>
+                                    <span class="text-gray-700">Niche audience targeting and messaging framework</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Full digital presence: <a href="https://altessiapatch.com/" target="_blank" class="text-blue-600 hover:underline">altessiapatch.com</a></span>
+                                    <span class="text-gray-700">Full website build and digital presence: <a href="https://altessiapatch.com/" target="_blank" class="text-blue-600 hover:underline">altessiapatch.com</a></span>
                                 </div>
                             </div>
+                            <p class="text-gray-900 font-semibold">
+                                <i class="fas fa-chart-line text-green-600 mr-2"></i>Result: Launched with a clear positioning, professional digital presence, and targeted outreach strategy.
+                            </p>
                         </div>
                         <div class="flex items-center justify-center">
-                            <div class="bg-gradient-to-br from-green-100 to-teal-100 rounded-xl p-8 w-full">
-                                <div class="text-center">
-                                    <div class="text-5xl font-bold text-green-600 mb-2">Full</div>
-                                    <div class="text-gray-700 font-medium">GTM Strategy</div>
-                                </div>
-                            </div>
+                            <img src="images/VisualProof/AltessiaLandingPage.png" alt="Altessia Landing Page" class="rounded-xl shadow-lg w-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -410,36 +448,38 @@
                 <!-- Project 4 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
                     <div class="grid lg:grid-cols-2 gap-8 p-8">
-                        <div>
+                        <div class="order-2 lg:order-1 flex items-center justify-center">
+                            <img src="images/VisualProof/ContentEngine.png" alt="Content Automation Engine" class="rounded-xl shadow-lg w-full object-cover">
+                        </div>
+                        <div class="order-1 lg:order-2">
                             <div class="inline-block px-4 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
                                 Content Automation
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">MultiCultural Couples Content Engine</h3>
-                            <p class="text-gray-700 mb-6">
-                                Built an automated content engine to streamline production across interviews, blogs, and social media channels for a personal project focused on multicultural relationships.
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Automated Content Engine for Multi-Channel Publishing</h3>
+                            <p class="text-gray-600 text-sm mb-2"><strong>Project:</strong> MultiCultural Couples (Personal Project)</p>
+                            <p class="text-gray-700 mb-4">
+                                <strong>The Challenge:</strong> Producing consistent, high-quality content across interviews, blog posts, and social media was time-consuming and difficult to scale.
                             </p>
-                            <div class="space-y-3">
-                                <div class="flex items-start gap-3">
-                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Multi-channel content distribution</span>
-                                </div>
+                            <p class="text-gray-700 mb-4">
+                                <strong>What I Built:</strong> An end-to-end content automation system that transforms raw interviews into polished, multi-channel content with minimal manual intervention.
+                            </p>
+                            <div class="space-y-3 mb-6">
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
                                     <span class="text-gray-700">Automated workflow from interview to publication</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                                    <span class="text-gray-700">Consistent brand voice across platforms</span>
+                                    <span class="text-gray-700">Multi-channel distribution (blog, social, newsletter)</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                    <span class="text-gray-700">Consistent brand voice maintained across platforms</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <div class="bg-gradient-to-br from-indigo-100 to-blue-100 rounded-xl p-8 w-full">
-                                <div class="text-center">
-                                    <div class="text-5xl font-bold text-indigo-600 mb-2">3+</div>
-                                    <div class="text-gray-700 font-medium">Content Channels</div>
-                                </div>
-                            </div>
+                            <p class="text-gray-900 font-semibold">
+                                <i class="fas fa-chart-line text-indigo-600 mr-2"></i>Result: 60% reduction in content production time while maintaining quality and consistency.
+                            </p>
                         </div>
                     </div>
                 </div>
